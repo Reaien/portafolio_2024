@@ -4,6 +4,7 @@
 
 body {
     background-color: black;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .dotTop {
@@ -42,5 +43,33 @@ body {
     .dot {
         width: 250px;
         height: 250px;
+    }
+}
+
+
+/*Efecto type*/
+.h1_type {
+    animation: typing 2s steps(21), transparent .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .h1_type {
+        margin: 0 auto;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+}
+
+@keyframes transparent {
+    50% {
+        border-color: transparent;
     }
 }
