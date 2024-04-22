@@ -6,7 +6,7 @@ export const Presentation = () => {
       <section className="grid md:grid-cols-2 items-center mt-44 ">
         <div className="text-white ml-80">
           <p className="text-2xl">Bienvenido a mi Portafolio</p>
-          <p className="h1_type text-5xl">Soy Iván Duarte Herrera</p>
+          <p className="h1_type text-5xl pb-4">Soy Iván Duarte Herrera</p>
           <p className="text-5xl text-orange-700">Ingeniero Informático</p>
         </div>
 

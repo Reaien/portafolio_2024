@@ -18,9 +18,9 @@ export const NavBar = () => {
   return (
     <>
       <section
-        className={`flex z-10 bg-slate-400 h-[90px] mt-8  transition-all duration-[2000ms] xl:w-[1200px] mx-auto px-11 rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30 ${
+        className={`transition-all duration-1000  flex z-10 bg-slate-400 h-[90px] mt-8 xl:w-[1200px] mx-auto px-11 rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30 ${
           isScrolled
-            ? "transition-all duration-[2000ms]  fixed -top-8 px-0 min-w-full rounded-none  shadow-lg"
+            ? "animate-fade-down animate-ease-in animate-duration-300  fixed -top-8 px-0 min-w-full rounded-none  shadow-lg"
             : ""
         }`}
       >
