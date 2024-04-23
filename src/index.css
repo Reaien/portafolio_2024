@@ -46,6 +46,15 @@ body {
     }
 }
 
+.dotTitles {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 118, 6, 0.702);
+    filter: blur(150px);
+}
+
 
 /*Efecto type*/
 .h1_type {

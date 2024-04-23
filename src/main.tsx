@@ -7,11 +7,14 @@ import { Home } from "./pages/Home";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div className="relative  ">
+    <div className="relative  -z-10">
       <div className=" inset-0 flex justify-center items-center ">
         <div className="dotTop" />
-        <div className="dot" style={{ top: "500px", right: "50px" }} />
-        <div className="dot" style={{ top: "1200px", left: "50px" }} />
+        <div className="dot" style={{ top: "400px", right: "50px" }} />
+        <div
+          className="dotTitles"
+          style={{ top: "1000px", left: "500px", width: "1000px" }}
+        />
       </div>
     </div>
     <Home />
