@@ -10,12 +10,29 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <div className="relative  -z-10">
       <div className=" inset-0 flex justify-center items-center ">
         <div className="dotTop" />
-        <div className="dot" style={{ top: "400px", right: "50px" }} />
+        <div
+          className="dot"
+          style={{
+            top: "400px",
+            right: "200px",
+            width: "250px",
+            height: "250px",
+          }}
+        />
         <div
           className="dotTitles"
-          style={{ top: "1000px", left: "500px", width: "1000px" }}
+          style={{ top: "1000px", left: "400px", width: "1200px" }}
         />
       </div>
+      <div
+        className="dot"
+        style={{
+          top: "1600px",
+          left: "400px",
+          width: "250px",
+          height: "250px",
+        }}
+      />
     </div>
     <Home />
   </React.StrictMode>

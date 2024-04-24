@@ -31,8 +31,8 @@ export const NavBar = () => {
           </a>
         </div>
         <div className="flex text-white justify-end items-center ml-auto space-x-16">
-          <a href="">Proyectos</a>
           <a href="">Carrera</a>
+          <a href="">Proyectos y trabajos</a>
           <a href="">Contacto</a>
         </div>
       </section>

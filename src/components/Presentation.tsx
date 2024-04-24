@@ -23,8 +23,8 @@ export const Presentation = () => {
             </button>
           </div>
           <div className="flex space-x-10 justify-end mr-40">
-            <LinkedinIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500" />
-            <GitHubIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500" />
+            <LinkedinIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
+            <GitHubIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
           </div>
         </div>
 
