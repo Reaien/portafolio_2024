@@ -18,7 +18,7 @@ export const Presentation = () => {
             </button>
             <button className="w-[200px] h-[50px] p-[3px]  bg-orange-600 rounded-lg text-xl ">
               <div className="bg-black h-full w-full flex justify-center rounded-lg items-center hover:bg-transparent hover:transition-all hover:duration-300">
-                Sobre mí
+                Descarga mi CV
               </div>
             </button>
           </div>

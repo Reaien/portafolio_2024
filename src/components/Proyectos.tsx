@@ -7,10 +7,10 @@ export const Proyectos = () => {
 
   return (
     <>
-      <section className="mt-60">
+      <section className="mt-60 ">
         <div className="flex flex-col justify-center items-center">
           <p className="text-7xl text-slate-300 font-bold ">
-            Trabajos y proyectos
+            Proyectos y cursos
           </p>
           <p className="italic text-lg text-slate-400 w-[700px] mt-5 text-center">
             Aquí puedes explorar los proyectos que he realizado tanto como
@@ -42,7 +42,7 @@ export const Proyectos = () => {
             Cursos
           </button>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10 ">
           {cardsProjects ? (
             <CardProjects cardInfo="" />
           ) : (

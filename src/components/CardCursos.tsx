@@ -1,5 +1,5 @@
 import React from "react";
-import Imagen1 from "../images/curso_01.png";
+import Imagen1 from "../images/cursos/curso_01.png";
 
 interface CardProps {
   cardInfo: string;
@@ -8,8 +8,8 @@ interface CardProps {
 export const CardCursos: React.FC<CardProps> = ({ cardInfo }) => {
   return (
     <>
-      <section className="h-[450px] w-[550px] mx-auto rounded-2xl m-5 overflow-hidden hover:relative">
-        <div className="absolute  bg-gradient-to-t from-orange-800 via-orange-800/60 to-transparent opacity-95" />
+      <section className="h-[450px] w-[550px] mx-auto rounded-2xl m-5 overflow-hidden  animate-fade">
+        <div className="" />
         <img
           className="w-full h-full object-cover"
           src={Imagen1}
