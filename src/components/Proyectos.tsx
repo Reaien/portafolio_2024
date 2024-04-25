@@ -1,6 +1,10 @@
-import { CardProyects } from "../components/CardProyects";
+import { useState } from "react";
+import { CardProjects } from "./CardProjects";
+import { CardCursos } from "../components/CardCursos";
 
 export const Proyectos = () => {
+  const [cardsProjects, setCardsProject] = useState(true);
+
   return (
     <>
       <section className="mt-60">
@@ -15,18 +19,35 @@ export const Proyectos = () => {
           </p>
         </div>
         <div className="text-white flex justify-center mt-32">
-          <button className="px-[150px] transition-all duration-3000 py-5 border-2 rounded-l-2xl text-2xl font-semibold border-orange-600 hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600 ">
+          <button
+            onClick={() => setCardsProject(true)}
+            className={`px-[150px] transition-all duration-3000 py-5 border-2 rounded-l-2xl text-2xl font-semibold border-orange-600 ${
+              cardsProjects
+                ? "bg-gradient-to-r from-orange-600 to-amber-600"
+                : "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
+            }  `}
+          >
             Proyectos
           </button>
-          <button className="px-[150px] transition-all duration-3000 py-5 border-2 rounded-r-2xl text-2xl font-semibold border-orange-600 hover:bg-gradient-to-l hover:from-orange-600 hover:to-amber-600 ">
-            Clases
+          <button
+            onClick={() => {
+              setCardsProject(false);
+            }}
+            className={`px-[150px] transition-all duration-3000 py-5 border-2 rounded-r-2xl text-2xl font-semibold border-orange-600 ${
+              cardsProjects
+                ? "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
+                : "bg-gradient-to-r from-orange-600 to-amber-600"
+            }  `}
+          >
+            Cursos
           </button>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10">
-          <CardProyects cardInfo="" />
-          <CardProyects cardInfo="" />
-          <CardProyects cardInfo="" />
-          <CardProyects cardInfo="" />
+          {cardsProjects ? (
+            <CardProjects cardInfo="" />
+          ) : (
+            <CardCursos cardInfo="" />
+          )}
         </div>
       </section>
     </>
