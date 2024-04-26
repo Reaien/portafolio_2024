@@ -12,11 +12,11 @@ export const cardProjectsData = [
     Descripcion:
       "Web creada para la empresa Máxima Formación en mi periodo de práctica laboral.",
 
-    Imagen1: { proyecto_maxima_01 },
-    Imagen2: { proyecto_maxima_02 },
-    Imagen3: { proyecto_maxima_03 },
-    Icon1: <ReactIcon />,
-    Icon2: <TailwindIcon />,
-    EnlaceWebIcon: <WebPageIcon />,
+    Imagen1: proyecto_maxima_01,
+    Imagen2: proyecto_maxima_02,
+    Imagen3: proyecto_maxima_03,
+    Icon1: <ReactIcon className="w-[80px] h-[80px]" />,
+    Icon2: <TailwindIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
   },
 ];

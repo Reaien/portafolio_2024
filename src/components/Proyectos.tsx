@@ -1,9 +1,36 @@
 import { useState } from "react";
 import { CardProjects } from "./CardProjects";
 import { CardCursos } from "../components/CardCursos";
+import { cardProjectsData } from "../data/cardProjectsData";
+import { cardCursosData } from "../data/cardCursosData";
 
 export const Proyectos = () => {
   const [cardsProjects, setCardsProject] = useState(true);
+
+  const renderCards = () => {
+    if (cardsProjects) {
+      return cardProjectsData.map((data) => (
+        <CardProjects
+          key={data.id}
+          Titulo={data.Titulo}
+          Descripcion={data.Descripcion}
+          Imagen1={data.Imagen1}
+          Icon1={data.Icon1}
+          Icon2={data.Icon2}
+          EnlaceWebIcon={data.EnlaceWebIcon}
+        />
+      ));
+    } else {
+      return cardCursosData.map((data) => (
+        <CardCursos
+          key={data.id}
+          Titulo={data.Titulo}
+          Observacion={data.Observacion}
+          Imagen={data.Imagen}
+        />
+      ));
+    }
+  };
 
   return (
     <>
@@ -13,9 +40,9 @@ export const Proyectos = () => {
             Proyectos y cursos
           </p>
           <p className="italic text-lg text-slate-400 w-[700px] mt-5 text-center">
-            Aquí puedes explorar los proyectos que he realizado tanto como
-            freelance así como también proyectos de cursos autodidactas y los
-            cursos que he impartido en DuocUC.
+            Aquí puedes explorar los proyectos y tecnologías utilizadas tanto
+            como freelance así como también en proyectos autodidactas y también
+            los cursos que he impartido en DuocUC.
           </p>
         </div>
         <div className="text-white flex justify-center mt-32">
@@ -43,11 +70,7 @@ export const Proyectos = () => {
           </button>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10 ">
-          {cardsProjects ? (
-            <CardProjects cardInfo="" />
-          ) : (
-            <CardCursos cardInfo="" />
-          )}
+          {renderCards()}
         </div>
       </section>
     </>
