@@ -7,6 +7,8 @@ import { DjangoIcon } from "../components/icons/DjangoIcon";
 import { AwsIcon } from "../components/icons/AwsIcon";
 import { JavaIcon } from "../components/icons/JavaIcon";
 import { SqliteIcon } from "../components/icons/SqliteIcon";
+import { CssIcon } from "../components/icons/CssIcon";
+import { MySqlIcon } from "../components/icons/MySqlIcon";
 import proyecto_maxima_01 from "../images/proyectos/proyecto_maxima_01.webp";
 import proyecto_maxima_02 from "../images/proyectos/proyecto_maxima_02.webp";
 import proyecto_maxima_03 from "../images/proyectos/proyecto_maxima_03.webp";
@@ -19,6 +21,9 @@ import web_store3 from "../images/proyectos/web_store3.webp";
 import carmona_1 from "../images/proyectos/carmona_1.webp";
 import carmona_2 from "../images/proyectos/carmona_2.webp";
 import carmona_3 from "../images/proyectos/carmona_3.webp";
+import muebles_1 from "../images/proyectos/muebles_1.webp";
+import muebles_2 from "../images/proyectos/muebles_2.webp";
+import muebles_3 from "../images/proyectos/muebles_3.webp";
 
 export const cardProjectsData = [
   {
@@ -73,33 +78,20 @@ export const cardProjectsData = [
     Imagen2: carmona_2,
     Imagen3: carmona_3,
     Icon1: <JavaIcon className="w-[80px] h-[80px]" />,
-    Icon2: <SqliteIcon className="w-[80px] h-[80px]" />,
+    Icon2: <MySqlIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
   },
   {
     id: 5,
-    Titulo: "Web Máxima Formación",
+    Titulo: "Web tienda de muebles",
     Descripcion:
-      "Web creada para la empresa Máxima Formación en mi periodo de práctica laboral.",
+      "Web desarrollada de forma autodidacta con curso de programación web en Udemy con Juan de la torre.",
 
-    Imagen1: proyecto_maxima_01,
-    Imagen2: proyecto_maxima_02,
-    Imagen3: proyecto_maxima_03,
-    Icon1: <ReactIcon className="w-[80px] h-[80px]" />,
-    Icon2: <TailwindIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
-  },
-  {
-    id: 6,
-    Titulo: "Web Máxima Formación",
-    Descripcion:
-      "Web creada para la empresa Máxima Formación en mi periodo de práctica laboral.",
-
-    Imagen1: proyecto_maxima_01,
-    Imagen2: proyecto_maxima_02,
-    Imagen3: proyecto_maxima_03,
-    Icon1: <ReactIcon className="w-[80px] h-[80px]" />,
-    Icon2: <TailwindIcon className="w-[80px] h-[80px]" />,
+    Imagen1: muebles_1,
+    Imagen2: muebles_2,
+    Imagen3: muebles_3,
+    Icon1: <HtmlIcon className="w-[80px] h-[80px]" />,
+    Icon2: <CssIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
   },
 ];

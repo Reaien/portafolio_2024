@@ -55,9 +55,12 @@ export const CardProjects: React.FC<CardProps> = ({
             <p className="italic text-white text-sm text-center px-1 mx-auto ">
               {Descripcion}
             </p>
-            <p className="flex flex-col mx-auto mb-10 text-2xl text-white">
-              {EnlaceWebIcon}
-            </p>
+            <div className="flex flex-col mx-auto  text-2xl text-white ">
+              <p>
+                {EnlaceWebIcon}
+                <p className="text-sm text-white text-center ">Enlace Web</p>
+              </p>
+            </div>
           </div>
         </div>
         {Imagenes.map((imagen, index) => (
