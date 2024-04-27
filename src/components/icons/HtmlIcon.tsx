@@ -2,7 +2,7 @@ import React from "react";
 interface IconProps {
   className?: string;
 }
-export const IconHtml5: React.FC<IconProps> = ({ className }) => {
+export const HtmlIcon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 1024 1024"

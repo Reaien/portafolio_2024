@@ -14,9 +14,11 @@ export const Proyectos = () => {
           key={data.id}
           Titulo={data.Titulo}
           Descripcion={data.Descripcion}
-          Imagen1={data.Imagen1}
+          Imagenes={[data.Imagen1, data.Imagen2, data.Imagen3]}
           Icon1={data.Icon1}
           Icon2={data.Icon2}
+          Icon3={data.Icon3}
+          Icon4={data.Icon4}
           EnlaceWebIcon={data.EnlaceWebIcon}
         />
       ));
