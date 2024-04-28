@@ -1,4 +1,5 @@
 import { AboutMe } from "../components/AboutMe";
+import { ContactMe } from "../components/ContactMe";
 
 import { NavBar } from "../components/NavBar";
 import { Presentation } from "../components/Presentation";
@@ -11,6 +12,7 @@ export const Home = () => {
       <Presentation />
       <AboutMe />
       <Proyectos />
+      <ContactMe />
     </>
   );
 };

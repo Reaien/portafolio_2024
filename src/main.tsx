@@ -43,6 +43,16 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           opacity: "0.6",
         }}
       />
+      <div
+        className="dot"
+        style={{
+          top: "3300px",
+          left: "600px",
+          width: "650px",
+          height: "650px",
+          opacity: "0.6",
+        }}
+      />
     </div>
     <Home />
   </React.StrictMode>

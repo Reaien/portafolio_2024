@@ -56,10 +56,10 @@ export const CardProjects: React.FC<CardProps> = ({
               {Descripcion}
             </p>
             <div className="flex flex-col mx-auto  text-2xl text-white ">
-              <p>
+              <div>
                 {EnlaceWebIcon}
                 <p className="text-sm text-white text-center ">Enlace Web</p>
-              </p>
+              </div>
             </div>
           </div>
         </div>
