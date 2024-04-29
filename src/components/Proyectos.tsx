@@ -24,19 +24,14 @@ export const Proyectos = () => {
       ));
     } else {
       return cardCursosData.map((data) => (
-        <CardCursos
-          key={data.id}
-          Titulo={data.Titulo}
-          Observacion={data.Observacion}
-          Imagen={data.Imagen}
-        />
+        <CardCursos key={data.id} Link={data.Link} />
       ));
     }
   };
 
   return (
     <>
-      <section className="mt-60 ">
+      <section className="mt-60 h-[1500px]">
         <div className="flex flex-col justify-center items-center">
           <p className="bg-gradient-to-b from-white to-gray-400 text-transparent pb-5 bg-clip-text font-bold text-7xl">
             Proyectos y cursos
