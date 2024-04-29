@@ -38,7 +38,7 @@ export const Proyectos = () => {
     <>
       <section className="mt-60 ">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-7xl text-slate-300 font-bold ">
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent pb-5 bg-clip-text font-bold text-7xl">
             Proyectos y cursos
           </p>
           <p className="italic text-lg text-slate-400 w-[700px] mt-5 text-center">

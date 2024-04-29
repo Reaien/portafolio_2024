@@ -3,6 +3,10 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
+import { ReactIcon } from "./icons/ReactIcon";
+import { TsIcon } from "./icons/TsIcon";
+import { TailwindIcon } from "./icons/TailwindIcon";
+import { GitHubIcon } from "./icons/GitHubIcon";
 
 export const ContactMe = () => {
   // useState para el captcha y pasar el estado a true si se realizó el captcha
@@ -42,13 +46,24 @@ export const ContactMe = () => {
   return (
     <>
       <section className="grid grid-cols-1 mt-40">
-        <p className="text-7xl text-slate-300 font-bold mx-auto">Contacto</p>
+        <p className="text-7xl bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text font-bold mx-auto">
+          Contacto
+        </p>
       </section>
-      <section className="  items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  mb-10 ">
-        <div className="md:ml-40 mt-10">
-          <p className="text-white">
-            hola aqui irá el "esta web está construida con"
+      <section className=" items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  mb-10 ">
+        <div className="flex flex-col justify-end items-center md:ml-20">
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text text-5xl font-bold ">
+            Esta web fue construída con
           </p>
+          <div className="flex text-white m-10 gap-3">
+            <ReactIcon className="w-20 h-20 " />
+            <TsIcon className="w-20 h-20" />
+            <TailwindIcon className="w-20 h-20" />
+          </div>
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text text-3xl font-bold">
+            Repositorio
+          </p>
+          <GitHubIcon className="w-20 h-20 text-white mt-5" />
         </div>
 
         <div className=" xl:mr-32 mb-10 mt-10">

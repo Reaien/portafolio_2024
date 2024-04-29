@@ -3,11 +3,15 @@ export const AboutMe = () => {
     <>
       <section className="mt-36">
         <div className="flex justify-center">
-          <p className="text-slate-300 font-bold text-7xl">Sobre mí</p>
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text font-bold text-7xl">
+            Sobre mí
+          </p>
         </div>
         <div className="grid grid-cols-2 text-white mt-20">
           <div className="flex flex-col w-[200px] mx-auto">
-            <div className=" text-9xl text-orange-600">1+</div>
+            <div className=" text-9xl bg-gradient-to-r from-orange-600 to-orange-950 bg-clip-text text-transparent font-extrabold">
+              1+
+            </div>
             <div className="text-slate-300 mt-4">
               Más de 1 año impartiendo clases de ayudantía en DuocUC gracias a
               mi desempeño académico.
