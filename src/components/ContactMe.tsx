@@ -43,6 +43,7 @@ export const ContactMe = () => {
         }
       );
   };
+
   return (
     <>
       <section className="grid grid-cols-1 mt-40">
@@ -63,7 +64,14 @@ export const ContactMe = () => {
           <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text text-3xl font-bold">
             Repositorio
           </p>
-          <GitHubIcon className="w-20 h-20 text-white mt-5" />
+          <a
+            href="https://github.com/Reaien/portafolio_2024"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:cursor-pointer"
+          >
+            <GitHubIcon className="w-20 h-20 text-white mt-5 hover:text-orange-600 transition-all duration-300" />
+          </a>
         </div>
 
         <div className=" xl:mr-32 mb-10 mt-10">

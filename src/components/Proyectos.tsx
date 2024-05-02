@@ -66,7 +66,7 @@ export const Proyectos = () => {
             Cursos
           </button>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-10 gap-20">
           {renderCards()}
         </div>
       </section>

@@ -41,9 +41,9 @@ export const CardProjects: React.FC<CardProps> = ({
   return (
     <>
       <section className="h-[450px] w-[550px] mx-auto rounded-2xl m-5 overflow-hidden relative animate-fade">
-        <div className="z-50 absolute inset-0  bg-gradient-to-t from-orange-950 via-orange-950/55 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+        <div className="z-50 absolute inset-0  bg-gradient-to-t from-orange-950/90 via-black/70 to-black/70 opacity-0 transition-opacity duration-300 hover:opacity-100">
           <div className="h-full grid grid-rows-4 justify-center pt-10">
-            <div className="flex justify-center items-center h-full text-white mt-20">
+            <div className="flex justify-center items-center h-full text-white mt-20 pb-2">
               {Icon1}
               {Icon2}
               {Icon3}

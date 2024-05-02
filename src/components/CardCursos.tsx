@@ -7,8 +7,13 @@ interface CardProps {
 export const CardCursos: React.FC<CardProps> = ({ Link }) => {
   return (
     <>
-      <section className="grid grid-cols-2 mx-auto rounded-2xl m-5 overflow-hidden  animate-fade">
-        <iframe className="w-full aspect-video " src={Link}></iframe>
+      <section className="flex justify-center mx-auto rounded-2xl m-5  overflow-hidden  animate-fade ">
+        <iframe
+          className=" aspect-video mx-auto h-[450px] w-[650px]"
+          src={Link}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
       </section>
     </>
   );

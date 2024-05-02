@@ -23,8 +23,20 @@ export const Presentation = () => {
             </button>
           </div>
           <div className="flex space-x-10 justify-end mr-40">
-            <LinkedinIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
-            <GitHubIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
+            <a
+              href="https://www.linkedin.com/in/ivanduarteh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
+            </a>
+            <a
+              href="https://github.com/Reaien"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon className="w-12 h-12  hover:text-orange-600 transition-all duration-500 cursor-pointer" />
+            </a>
           </div>
         </div>
 
