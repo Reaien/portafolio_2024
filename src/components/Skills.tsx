@@ -8,6 +8,7 @@ import { BootstrapColorIcon } from "./icons/ColorIcons/BootstrapColorIcon";
 import { DjangoColorIcon } from "./icons/ColorIcons/DjangoColorIcon";
 import { AwsColorIcon } from "./icons/ColorIcons/AwsColorIcon";
 import { SqliteColorIcon } from "./icons/ColorIcons/SqliteColorIcon";
+import { MySqlColorIcon } from "./icons/ColorIcons/MySqlColorIcon";
 
 export const Skills = () => {
   return (
@@ -36,15 +37,14 @@ export const Skills = () => {
             <ReactColorIcon />
           </div>
         </div>
-        <div className="grid grid-cols-1 justify-items-center mt-5">
-          <div className="flex gap-5">
+        <div className="grid grid-cols-1 justify-items-center mt-5 h-[50px] ">
+          <div className="flex gap-5 items-center">
             <DjangoColorIcon />
-            <div className="pt-7">
-              <AwsColorIcon className="bg-white py-1 rounded" />
-            </div>
-            <div>
-              <SqliteColorIcon className="bg-white py-1 rounded" />
-            </div>
+
+            <AwsColorIcon className="bg-white py-1 rounded" />
+
+            <SqliteColorIcon className="bg-white py-1 rounded" />
+            <MySqlColorIcon className="bg-white  rounded" />
           </div>
         </div>
       </section>

@@ -37,9 +37,11 @@ export const Proyectos = () => {
             Proyectos y cursos
           </p>
           <p className="italic text-lg text-slate-400 w-[700px] mt-5 text-center">
-            Aquí puedes explorar los proyectos y tecnologías utilizadas tanto
-            como freelance así como también en proyectos autodidactas y también
-            los cursos que he impartido en DuocUC.
+            Con mas de 1 año de experiencia como desarrollador web junior he
+            participado de proyectos reales otorgando soluciones tecnológicas a
+            mis clientes, aquí puedes explorar los proyectos y tecnologías
+            utilizadas tanto como freelance así como también en proyectos
+            autodidactas y también los cursos que he impartido en DuocUC.
           </p>
         </div>
         <div className="text-white flex justify-center mt-32">
