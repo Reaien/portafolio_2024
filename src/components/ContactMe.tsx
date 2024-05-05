@@ -53,7 +53,7 @@ export const ContactMe = () => {
       </section>
       <section className=" items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  mb-10 ">
         <div className="flex flex-col justify-end items-center md:ml-20">
-          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text text-5xl font-bold ">
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent text-center bg-clip-text text-5xl font-bold ">
             Esta web fue construída con
           </p>
           <div className="flex text-white m-10 gap-3">
@@ -74,7 +74,7 @@ export const ContactMe = () => {
           </a>
         </div>
 
-        <div className=" xl:mr-32 mb-10 mt-10">
+        <div className=" xl:mr-32 mb-10 mt-10 mx-auto px-5">
           <div className=" shadow-lg rounded-2xl bg-slate-400 backdrop-blur-lg bg-opacity-30  ">
             <form
               className="px-3 md:px-28 pb-5 "

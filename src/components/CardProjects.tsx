@@ -40,8 +40,8 @@ export const CardProjects: React.FC<CardProps> = ({
 
   return (
     <>
-      <section className="h-[480px] w-[550px] mx-auto rounded-2xl m-5 overflow-hidden relative animate-fade">
-        <div className="z-50 absolute inset-0  bg-gradient-to-t from-orange-950/90 via-black/70 to-black/70 opacity-0 transition-opacity duration-300 hover:opacity-100">
+      <section className="h-[480px] w-[320px] md:w-[550px] mx-auto rounded-2xl m-5 overflow-hidden relative animate-fade">
+        <div className="z-30 absolute inset-0  bg-gradient-to-t from-orange-950/90 via-black/70 to-black/70 opacity-0 transition-opacity duration-300 hover:opacity-100">
           <div className="h-full grid grid-rows-4 justify-center pt-10">
             <div className="flex justify-center items-center h-full text-white mt-20 pb-2">
               {Icon1}
@@ -52,14 +52,12 @@ export const CardProjects: React.FC<CardProps> = ({
             <p className="italic text-white text-sm text-center mx-auto mt-16">
               {Titulo}
             </p>
-            <p className="italic text-white text-sm text-center px-1 mx-auto ">
+            <p className="italic text-white text-sm text-center px-1 mx-auto">
               {Descripcion}
             </p>
-            <div className="flex flex-col mx-auto  text-2xl text-white ">
-              <div>
-                {EnlaceWebIcon}
-                <p className="text-sm text-white text-center ">Enlace Web</p>
-              </div>
+            <div className="flex flex-col mx-auto justify-items-center mt-4 text-white ">
+              {EnlaceWebIcon}
+              <p className="text-sm text-white mx-auto ">Enlace Web</p>
             </div>
           </div>
         </div>

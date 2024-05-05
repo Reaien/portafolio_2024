@@ -21,14 +21,12 @@ export const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
-  const isWideScreen = window.innerWidth < 768;
-
   return (
     <>
       <section
-        className={`transition-all duration-1000  flex z-10 bg-slate-400 h-[90px] xl:mt-8 xl:w-[1200px] mx-auto xl:px-11 xl:rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30 ${
+        className={`transition-all duration-1000  flex z-50 bg-slate-400 h-[90px] xl:mt-8 xl:w-[1200px] mx-auto xl:px-11 max-xl:rounded-none rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30 ${
           isScrolled
-            ? "animate-fade-down animate-ease-in animate-duration-300  fixed -top-8 px-0 min-w-full rounded-none  shadow-lg"
+            ? "xl:animate-fade-down xl:animate-ease-in xl:animate-duration-300  xl:fixed xl:-top-8 px-0 min-w-full rounded-none  shadow-lg"
             : ""
         }`}
       >
@@ -40,18 +38,18 @@ export const NavBar = () => {
         </div>
         <div
           onClick={toggleNavBar}
-          className="flex md:hidden text-white items-center ml-auto mr-10 font-bold text-2xl"
+          className="flex xl:hidden text-white items-center ml-auto mr-10 font-bold text-2xl"
         >
           {isOpen ? "X" : "="}
         </div>
-        <div className="hidden text-white justify-end items-center ml-auto space-x-16">
+        <div className="max-xl:hidden flex text-white justify-end items-center ml-auto space-x-16">
           <a href="">Carrera</a>
           <a href="">Proyectos y cursos</a>
           <a href="">Contacto</a>
         </div>
       </section>
-      {isOpen && isWideScreen && (
-        <div className=" flex flex-col backdrop-filter backdrop-blur-lg bg-opacity-30 transition-all duration-1000 bg-slate-400 rounded rounded-b-md text-white absolute w-full text-xl gap-10 space-y-5">
+      {isOpen && (
+        <div className="xl:hidden flex flex-col backdrop-filter backdrop-blur-lg bg-opacity-30 transition-all duration-1000 bg-slate-400 rounded rounded-b-md text-white absolute w-full text-xl gap-10 space-y-5">
           <a
             className="mt-5 hover:text-orange-600 transition-all duration-500"
             href=""

@@ -19,10 +19,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             height: "250px",
           }}
         />
-        <div
-          className="dotTitles"
-          style={{ top: "1000px", left: "400px", width: "1200px" }}
-        />
       </div>
       <div
         className="dot"

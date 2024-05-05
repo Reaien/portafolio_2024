@@ -37,7 +37,7 @@ export const cardProjectsData = [
     Imagen3: proyecto_maxima_03,
     Icon1: <ReactIcon className="w-[80px] h-[80px]" />,
     Icon2: <TailwindIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const cardProjectsData = [
     Icon2: <BootstrapIcon className="w-[60px] h-[60px]" />,
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     Icon4: <AwsIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ export const cardProjectsData = [
     Icon1: <HtmlIcon className="w-[80px] h-[80px]" />,
     Icon2: <BootstrapIcon className="w-[60px] h-[60px]" />,
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
   },
   {
     id: 4,
@@ -79,7 +79,7 @@ export const cardProjectsData = [
     Imagen3: carmona_3,
     Icon1: <JavaIcon className="w-[80px] h-[80px]" />,
     Icon2: <MySqlIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
   },
   {
     id: 5,
@@ -92,6 +92,6 @@ export const cardProjectsData = [
     Imagen3: muebles_3,
     Icon1: <HtmlIcon className="w-[80px] h-[80px]" />,
     Icon2: <CssIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
   },
 ];

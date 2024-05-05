@@ -6,17 +6,33 @@ interface IconProps {
 export const CssColorIcon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 128 128"
       height="50px"
       width="50px"
-      id="css3"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="CSS3"
+      role="img"
+      viewBox="0 0 512 512"
+      fill="#000000"
       className={className}
     >
-      <path
-        fill="#1572B6"
-        d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626 10.063-112.837h-110.48zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336-28.36 7.844v.001l-.022.019-28.311-7.888-1.917-21.739h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229 1.632-18.001h-32.282999999999994l-.277-3.043-.631-7.129-.331-3.828h34.748999999999995l1.264-14h-52.926l-.277-3.041-.63-7.131-.332-3.828h69.281l-.331 3.862z"
-      ></path>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"></path>
+        <path fill="#2965f1" d="M256 37V472l149-41 35-394"></path>
+        <path
+          fill="#ebebeb"
+          d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"
+        ></path>
+        <path
+          fill="#ffffff"
+          d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"
+        ></path>
+      </g>
     </svg>
   );
 };

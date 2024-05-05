@@ -7,7 +7,7 @@ export const MySqlColorIcon: React.FC<IconProps> = ({ className }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 128 128"
-      height="50px"
+      height="45px"
       width="90px"
       id="mysql"
       className={className}

@@ -21,9 +21,9 @@ export const SqliteColorIcon: React.FC<IconProps> = ({ className }) => {
           y1="2.046%"
           y2="94.439%"
         >
-          <stop offset="0%" stop-color="#97D9F6"></stop>
-          <stop offset="92.024%" stop-color="#0F80CC"></stop>
-          <stop offset="100%" stop-color="#0F80CC"></stop>
+          <stop offset="0%" stopColor="#97D9F6"></stop>
+          <stop offset="92.024%" stopColor="#0F80CC"></stop>
+          <stop offset="100%" stopColor="#0F80CC"></stop>
         </linearGradient>
       </defs>
       <path

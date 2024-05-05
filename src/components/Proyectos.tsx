@@ -31,12 +31,12 @@ export const Proyectos = () => {
 
   return (
     <>
-      <section className="mt-60 h-[1500px]">
+      <section className="mt-60 ">
         <div className="flex flex-col justify-center items-center">
-          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent pb-5 bg-clip-text font-bold text-7xl">
+          <p className="bg-gradient-to-b from-white to-gray-400 text-transparent pb-5 bg-clip-text font-bold text-4xl md:text-7xl">
             Proyectos y cursos
           </p>
-          <p className="italic text-lg text-slate-400 w-[700px] mt-5 text-center">
+          <p className="italic text-lg text-slate-400 md:w-[700px] mt-5 text-center">
             Con mas de 1 año de experiencia como desarrollador web junior he
             participado de proyectos reales otorgando soluciones tecnológicas a
             mis clientes, aquí puedes explorar los proyectos y tecnologías
@@ -47,7 +47,7 @@ export const Proyectos = () => {
         <div className="text-white flex justify-center mt-32">
           <button
             onClick={() => setCardsProject(true)}
-            className={`px-[150px] transition-all duration-3000 py-5 border-2 rounded-l-2xl text-2xl font-semibold border-orange-600 ${
+            className={`px-[40px] md:px-[150px] transition-all duration-3000 py-5 border-2 rounded-l-2xl md:text-2xl font-semibold border-orange-600 ${
               cardsProjects
                 ? "bg-gradient-to-r from-orange-600 to-amber-600"
                 : "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
@@ -59,7 +59,7 @@ export const Proyectos = () => {
             onClick={() => {
               setCardsProject(false);
             }}
-            className={`px-[150px] transition-all duration-3000 py-5 border-2 rounded-r-2xl text-2xl font-semibold border-orange-600 ${
+            className={`px-[40px] md:px-[150px] transition-all duration-3000 py-5 border-2 rounded-r-2xl md:text-2xl font-semibold border-orange-600 ${
               cardsProjects
                 ? "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
                 : "bg-gradient-to-r from-orange-600 to-amber-600"

@@ -1,4 +1,3 @@
-import React from "react";
 import { HtmlColorIcon } from "./icons/ColorIcons/HtmlColorIcon";
 import { CssColorIcon } from "./icons/ColorIcons/CssColorIcon";
 import { JavascriptColorIcon } from "./icons/ColorIcons/JavascriptColorIcon";
@@ -13,8 +12,8 @@ import { MySqlColorIcon } from "./icons/ColorIcons/MySqlColorIcon";
 export const Skills = () => {
   return (
     <>
-      <section className="grid grid-cols-1 justify-items-center mt-32">
-        <div className="text-slate-200 text-center  w-[1100px] ">
+      <section className="grid md:grid-cols-1 justify-items-center mt-32">
+        <div className="text-slate-200 text-center px-5 xl:w-[1100px] ">
           Poseo habilidades sólidas en el desarrollo web, incluyendo el dominio
           de HTML, CSS y JavaScript para crear interfaces de usuario dinámicas y
           atractivas. Además, tengo experiencia en el uso de bibliotecas y
@@ -27,8 +26,8 @@ export const Skills = () => {
           alta calidad.
         </div>
 
-        <div className="grid grid-cols-1 justify-items-center mt-5">
-          <div className="flex gap-5">
+        <div className=" mt-5">
+          <div className="flex gap-2 justify-center mb-5">
             <HtmlColorIcon />
             <CssColorIcon />
             <JavascriptColorIcon />
@@ -36,10 +35,8 @@ export const Skills = () => {
             <BootstrapColorIcon />
             <ReactColorIcon />
           </div>
-        </div>
-        <div className="grid grid-cols-1 justify-items-center mt-5 h-[50px] ">
-          <div className="flex gap-5 items-center">
-            <DjangoColorIcon />
+          <div className="flex flex-wrap justify-center gap-2">
+            <DjangoColorIcon className="bg-white py-1 rounded px-1" />
 
             <AwsColorIcon className="bg-white py-1 rounded" />
 
