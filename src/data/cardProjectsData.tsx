@@ -6,7 +6,6 @@ import { BootstrapIcon } from "../components/icons/BootstrapIcon";
 import { DjangoIcon } from "../components/icons/DjangoIcon";
 import { AwsIcon } from "../components/icons/AwsIcon";
 import { JavaIcon } from "../components/icons/JavaIcon";
-import { SqliteIcon } from "../components/icons/SqliteIcon";
 import { CssIcon } from "../components/icons/CssIcon";
 import { MySqlIcon } from "../components/icons/MySqlIcon";
 import proyecto_maxima_01 from "../images/proyectos/proyecto_maxima_01.webp";
@@ -24,6 +23,7 @@ import carmona_3 from "../images/proyectos/carmona_3.webp";
 import muebles_1 from "../images/proyectos/muebles_1.webp";
 import muebles_2 from "../images/proyectos/muebles_2.webp";
 import muebles_3 from "../images/proyectos/muebles_3.webp";
+import { GitHubIcon } from "../components/icons/GitHubIcon";
 
 export const cardProjectsData = [
   {
@@ -72,14 +72,14 @@ export const cardProjectsData = [
     id: 4,
     Titulo: "Software de escritorio administración ventas RentACar.",
     Descripcion:
-      "Software de arriendo de automóviles para rent a car, este software permite arrendar, controlar y generar reportes de autos arrendados, este software fue creado bajo la formación de JAVA de mi carrera de Ingeniería en Informática en DuocUC",
+      "Software de escritorio de arriendo de automóviles para rent a car, este software permite arrendar, controlar y generar reportes de autos arrendados, este software fue creado bajo la formación de JAVA de mi carrera de Ingeniería en Informática en DuocUC",
 
     Imagen1: carmona_1,
     Imagen2: carmona_2,
     Imagen3: carmona_3,
     Icon1: <JavaIcon className="w-[80px] h-[80px]" />,
     Icon2: <MySqlIcon className="w-[80px] h-[80px]" />,
-    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    EnlaceWebIcon: <GitHubIcon className="mx-auto" />,
   },
   {
     id: 5,

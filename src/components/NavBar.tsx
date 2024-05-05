@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Logo from "../images/logo/Logo_project-transformed.png";
+import Logo from "../images/logo/Logo_project-transformed.webp";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,9 +43,24 @@ export const NavBar = () => {
           {isOpen ? "X" : "="}
         </div>
         <div className="max-xl:hidden flex text-white justify-end items-center ml-auto space-x-16">
-          <a href="">Carrera</a>
-          <a href="">Proyectos y cursos</a>
-          <a href="">Contacto</a>
+          <a
+            href=""
+            className="hover:text-orange-600 transition-all duration-500"
+          >
+            Carrera
+          </a>
+          <a
+            href=""
+            className="hover:text-orange-600 transition-all duration-500"
+          >
+            Proyectos y cursos
+          </a>
+          <a
+            href=""
+            className="hover:text-orange-600 transition-all duration-500"
+          >
+            Contacto
+          </a>
         </div>
       </section>
       {isOpen && (

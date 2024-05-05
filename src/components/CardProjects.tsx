@@ -57,7 +57,7 @@ export const CardProjects: React.FC<CardProps> = ({
             </p>
             <div className="flex flex-col mx-auto justify-items-center mt-4 text-white ">
               {EnlaceWebIcon}
-              <p className="text-sm text-white mx-auto ">Enlace Web</p>
+              <p className="text-sm text-white mx-auto ">Enlace</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import foto from "../images/foto_me.png";
+import foto from "../images/foto_me.webp";
 import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { GitHubIcon } from "./icons/GitHubIcon";
 

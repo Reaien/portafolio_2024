@@ -1,4 +1,3 @@
-import React from "react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -14,10 +13,14 @@ export const ContactMe = () => {
   const [capValue, setCapValue] = useState(null);
 
   //formulario de emailJS
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   //funcion para el formulario de emailJS con las keys
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!form.current) {
+      console.error("El formulario no está disponible");
+      return;
+    }
     emailjs
       .sendForm("service_0zegwqp", "template_7am55pq", form.current, {
         publicKey: "-yYviovuhGc-yfknj",
@@ -25,12 +28,18 @@ export const ContactMe = () => {
       .then(
         () => {
           Swal.fire({
-            title: "¡Muchas Gracias por contactarteme !",
-            text: "Te escribiré al email de contacto que ingresaste !",
+            title: "¡Muchas Gracias por contactarme !",
+            text: "Te escribiré al email de contacto que ingresaste lo mas pronto !",
             icon: "success",
             timer: 8000,
           });
-          form.current.reset();
+          if (form.current) {
+            form.current.reset();
+          } else {
+            console.error(
+              "El formulario no está disponible para ser reseteado"
+            );
+          }
         },
         (error) => {
           Swal.fire({
@@ -116,7 +125,7 @@ export const ContactMe = () => {
               <div className="max-md:flex justify-center items-center">
                 <ReCAPTCHA
                   sitekey="6LcUiskpAAAAAIyHsnoqnpAa1lrVbXV_AHyxplDY"
-                  onChange={(val) => setCapValue(val)}
+                  onChange={(val: any) => setCapValue(val)}
                   className="mt-5"
                 />
               </div>
@@ -124,7 +133,7 @@ export const ContactMe = () => {
                 <button
                   type="submit"
                   value="Envíar contacto"
-                  className="mt-4 rounded bg-orange-600  py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline "
+                  className="mt-4 rounded bg-orange-600  py-2 px-3  text-white font-custom cursor-pointer hover:underline "
                   //boton disabled hasta que se pase el captcha//
                   disabled={!capValue}
                 >

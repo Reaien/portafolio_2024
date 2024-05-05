@@ -47,7 +47,7 @@ export const Proyectos = () => {
         <div className="text-white flex justify-center mt-32">
           <button
             onClick={() => setCardsProject(true)}
-            className={`px-[40px] md:px-[150px] transition-all duration-3000 py-5 border-2 rounded-l-2xl md:text-2xl font-semibold border-orange-600 ${
+            className={`px-[40px] md:px-[150px]  py-5 border-2 rounded-l-2xl md:text-2xl font-semibold border-orange-600 ${
               cardsProjects
                 ? "bg-gradient-to-r from-orange-600 to-amber-600"
                 : "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
@@ -59,7 +59,7 @@ export const Proyectos = () => {
             onClick={() => {
               setCardsProject(false);
             }}
-            className={`px-[40px] md:px-[150px] transition-all duration-3000 py-5 border-2 rounded-r-2xl md:text-2xl font-semibold border-orange-600 ${
+            className={`px-[40px] md:px-[150px]  py-5 border-2 rounded-r-2xl md:text-2xl font-semibold border-orange-600 ${
               cardsProjects
                 ? "hover:bg-gradient-to-r hover:from-orange-600 hover:to-amber-600"
                 : "bg-gradient-to-r from-orange-600 to-amber-600"
