@@ -21,6 +21,51 @@ export const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToContact = () => {
+    setTimeout(() => {
+      const ContactComponent = document.getElementById("contacto");
+      if (ContactComponent) {
+        ContactComponent.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      } else {
+        console.error("No se encontró ningún elemento con el ID 'contacto'");
+      }
+    }, 100);
+  };
+
+  const scrollToCarrera = () => {
+    setTimeout(() => {
+      const ContactComponent = document.getElementById("carrera");
+      if (ContactComponent) {
+        ContactComponent.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      } else {
+        console.error("No se encontró ningún elemento con el ID 'carrera'");
+      }
+    }, 100);
+  };
+
+  const scrollToProyectos = () => {
+    setTimeout(() => {
+      const ContactComponent = document.getElementById("proyectos");
+      if (ContactComponent) {
+        ContactComponent.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      } else {
+        console.error("No se encontró ningún elemento con el ID 'proyectos'");
+      }
+    }, 100);
+  };
+
   return (
     <>
       <section
@@ -44,42 +89,42 @@ export const NavBar = () => {
         </div>
         <div className="max-xl:hidden flex text-white justify-end items-center ml-auto space-x-16">
           <a
-            href=""
-            className="hover:text-orange-600 transition-all duration-500"
+            onClick={scrollToCarrera}
+            className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Carrera
           </a>
           <a
-            href=""
-            className="hover:text-orange-600 transition-all duration-500"
+            onClick={scrollToProyectos}
+            className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Proyectos y cursos
           </a>
           <a
-            href=""
-            className="hover:text-orange-600 transition-all duration-500"
+            onClick={scrollToContact}
+            className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Contacto
           </a>
         </div>
       </section>
       {isOpen && (
-        <div className="xl:hidden flex flex-col backdrop-filter backdrop-blur-lg bg-opacity-30 transition-all duration-1000 bg-slate-400 rounded rounded-b-md text-white absolute w-full text-xl gap-10 space-y-5">
+        <div className="animate-fade-down animate-duration-200 xl:hidden flex flex-col backdrop-filter backdrop-blur-lg bg-opacity-30 transition-all duration-1000 bg-slate-400 rounded rounded-b-md text-white absolute w-full text-xl gap-10 space-y-5">
           <a
-            className="mt-5 hover:text-orange-600 transition-all duration-500"
-            href=""
+            className="mt-5 hover:text-orange-600 transition-all ml-2 duration-500 cursor-pointer"
+            onClick={scrollToCarrera}
           >
             Carrera
           </a>
           <a
-            className="hover:text-orange-600 transition-all duration-500"
-            href=""
+            className="hover:text-orange-600 transition-all ml-2 duration-500 cursor-pointer"
+            onClick={scrollToProyectos}
           >
             Proyectos y cursos
           </a>
           <a
-            className="pb-5 hover:text-orange-600 transition-all duration-500"
-            href=""
+            className="pb-5 hover:text-orange-600 transition-all ml-2 duration-500 cursor-pointer"
+            onClick={scrollToContact}
           >
             Contacto
           </a>

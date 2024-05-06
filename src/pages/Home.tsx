@@ -12,10 +12,18 @@ export const Home = () => {
     <>
       <NavBar />
       <Presentation />
-      <AboutMe />
+      <div id="carrera">
+        <AboutMe />
+      </div>
+
       <Skills />
-      <Proyectos />
-      <ContactMe />
+      <div id="proyectos">
+        <Proyectos />
+      </div>
+
+      <div id="contacto">
+        <ContactMe />
+      </div>
       <Footer />
     </>
   );

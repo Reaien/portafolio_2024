@@ -3,6 +3,20 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { GitHubIcon } from "./icons/GitHubIcon";
 
 export const Presentation = () => {
+  const scrollToContact = () => {
+    setTimeout(() => {
+      const ContactComponent = document.getElementById("contacto");
+      if (ContactComponent) {
+        ContactComponent.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      } else {
+        console.error("No se encontró ningún elemento con el ID 'contacto'");
+      }
+    }, 100);
+  };
   return (
     <>
       <section className="grid md:grid-cols-2 items-center h-[800px]">
@@ -18,7 +32,10 @@ export const Presentation = () => {
           </p>
           <div className="flex space-x-10 justify-center xl:mr-20 my-5">
             <button className=" w-[120px] md:w-[200px] h-[50px] p-[3px]  bg-orange-600 rounded-lg md:text-xl ">
-              <div className="bg-black h-full w-full flex justify-center rounded-lg items-center hover:bg-transparent hover:transition-all hover:duration-300">
+              <div
+                onClick={scrollToContact}
+                className="bg-black h-full w-full flex justify-center rounded-lg items-center hover:bg-transparent hover:transition-all hover:duration-300"
+              >
                 Contáctame
               </div>
             </button>

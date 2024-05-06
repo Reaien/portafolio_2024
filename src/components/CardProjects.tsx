@@ -10,6 +10,7 @@ interface CardProps {
   Icon3: React.ReactNode;
   Icon4: React.ReactNode;
   EnlaceWebIcon: React.ReactNode;
+  Link: string;
 }
 
 export const CardProjects: React.FC<CardProps> = ({
@@ -21,6 +22,7 @@ export const CardProjects: React.FC<CardProps> = ({
   Icon3,
   Icon4,
   EnlaceWebIcon,
+  Link,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -55,10 +57,15 @@ export const CardProjects: React.FC<CardProps> = ({
             <p className="italic text-white text-sm text-center px-1 mx-auto">
               {Descripcion}
             </p>
-            <div className="flex flex-col mx-auto justify-items-center mt-4 text-white ">
+            <a
+              href={Link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col mx-auto justify-items-center mt-4 text-white cursor-pointer hover:text-orange-600 transition-all duration-200"
+            >
               {EnlaceWebIcon}
               <p className="text-sm text-white mx-auto ">Enlace</p>
-            </div>
+            </a>
           </div>
         </div>
         {Imagenes.map((imagen, index) => (

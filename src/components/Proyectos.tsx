@@ -20,6 +20,7 @@ export const Proyectos = () => {
           Icon3={data.Icon3}
           Icon4={data.Icon4}
           EnlaceWebIcon={data.EnlaceWebIcon}
+          Link={data.Link}
         />
       ));
     } else {

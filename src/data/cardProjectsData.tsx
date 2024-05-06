@@ -38,6 +38,7 @@ export const cardProjectsData = [
     Icon1: <ReactIcon className="w-[80px] h-[80px]" />,
     Icon2: <TailwindIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    Link: "https://www.maxima-formacion.com",
   },
   {
     id: 2,
@@ -53,6 +54,7 @@ export const cardProjectsData = [
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     Icon4: <AwsIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    Link: "balancer-jdelb-776534893.us-east-2.elb.amazonaws.com",
   },
   {
     id: 3,
@@ -67,6 +69,7 @@ export const cardProjectsData = [
     Icon2: <BootstrapIcon className="w-[60px] h-[60px]" />,
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    Link: "",
   },
   {
     id: 4,
@@ -80,6 +83,7 @@ export const cardProjectsData = [
     Icon1: <JavaIcon className="w-[80px] h-[80px]" />,
     Icon2: <MySqlIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <GitHubIcon className="mx-auto" />,
+    Link: "https://github.com/Reaien/Software-Sistema-Administrativo-Rent-a-car",
   },
   {
     id: 5,
@@ -93,5 +97,6 @@ export const cardProjectsData = [
     Icon1: <HtmlIcon className="w-[80px] h-[80px]" />,
     Icon2: <CssIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    Link: "https://reaien.github.io/Decoration-Web-Project/",
   },
 ];
