@@ -77,9 +77,7 @@ export const NavBar = () => {
       >
         <div className="flex text-white justify-start items-center max-w-[200px] space-x-3">
           <img loading="lazy" className="w-12 h-12" src={Logo} alt="logo" />
-          <a href="" className="text-4xl font-bold">
-            Iván.
-          </a>
+          <a className="text-4xl font-bold">Iván.</a>
         </div>
         <div
           onClick={toggleNavBar}
@@ -88,24 +86,24 @@ export const NavBar = () => {
           {isOpen ? "X" : "="}
         </div>
         <div className="max-xl:hidden flex text-white justify-end items-center ml-auto space-x-16">
-          <a
+          <button
             onClick={scrollToCarrera}
             className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Carrera
-          </a>
-          <a
+          </button>
+          <button
             onClick={scrollToProyectos}
             className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Proyectos y cursos
-          </a>
-          <a
+          </button>
+          <button
             onClick={scrollToContact}
             className="hover:text-orange-600 transition-all duration-500 cursor-pointer"
           >
             Contacto
-          </a>
+          </button>
         </div>
       </section>
       {isOpen && (
