@@ -23,7 +23,11 @@ import carmona_3 from "../images/proyectos/carmona_3.webp";
 import muebles_1 from "../images/proyectos/muebles_1.webp";
 import muebles_2 from "../images/proyectos/muebles_2.webp";
 import muebles_3 from "../images/proyectos/muebles_3.webp";
+import festival_1 from "../images/proyectos/festival_web_01.webp";
+import festival_2 from "../images/proyectos/festival_web_02.webp";
+import festival_3 from "../images/proyectos/festival_web_03.webp";
 import { GitHubIcon } from "../components/icons/GitHubIcon";
+import { JavascriptIcon } from "../components/icons/JavascriptIcon";
 
 export const cardProjectsData = [
   {
@@ -54,7 +58,7 @@ export const cardProjectsData = [
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     Icon4: <AwsIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
-    Link: "balancer-jdelb-776534893.us-east-2.elb.amazonaws.com",
+    Link: "jdelb.cl",
   },
   {
     id: 3,
@@ -69,7 +73,7 @@ export const cardProjectsData = [
     Icon2: <BootstrapIcon className="w-[60px] h-[60px]" />,
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
-    Link: "",
+    Link: "http://balancer-marketplace-1084868839.us-east-2.elb.amazonaws.com/",
   },
   {
     id: 4,
@@ -87,6 +91,21 @@ export const cardProjectsData = [
   },
   {
     id: 5,
+    Titulo: "Web festival de rock",
+    Descripcion:
+      "Web desarrollada de forma autodidacta con curso de programación web en Udemy con Juan de la torre incorporando manipulación de DOM con JS.",
+
+    Imagen1: festival_1,
+    Imagen2: festival_2,
+    Imagen3: festival_3,
+    Icon1: <HtmlIcon className="w-[80px] h-[80px]" />,
+    Icon2: <CssIcon className="w-[80px] h-[80px]" />,
+    Icon3: <JavascriptIcon className="w-[80px] h-[80px]" />,
+    EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
+    Link: "https://reaien.github.io/Web-Festival-Rock/",
+  },
+  {
+    id: 6,
     Titulo: "Web tienda de muebles",
     Descripcion:
       "Web desarrollada de forma autodidacta con curso de programación web en Udemy con Juan de la torre.",

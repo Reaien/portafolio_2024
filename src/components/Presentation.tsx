@@ -1,6 +1,7 @@
 import foto from "../images/foto_me.webp";
 import { LinkedinIcon } from "./icons/LinkedinIcon";
 import { GitHubIcon } from "./icons/GitHubIcon";
+import CV from "../assets/CV IVAN DUARTE.pdf";
 
 export const Presentation = () => {
   const scrollToContact = () => {
@@ -39,11 +40,16 @@ export const Presentation = () => {
                 Contáctame
               </div>
             </button>
-            <button className="w-[130px] md:w-[200px] h-[50px] p-[3px]  bg-orange-600 rounded-lg md:text-xl ">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={CV}
+              className="w-[130px] md:w-[200px] h-[50px] p-[3px]  bg-orange-600 rounded-lg md:text-xl "
+            >
               <div className="bg-black h-full w-full flex justify-center rounded-lg items-center hover:bg-transparent hover:transition-all hover:duration-300">
                 Descarga mi CV
               </div>
-            </button>
+            </a>
           </div>
           <div className="flex space-x-10 justify-center mx-auto md:justify-end md:mr-40">
             <a
