@@ -77,7 +77,7 @@ export const NavBar = () => {
       >
         <div className="flex text-white justify-start items-center max-w-[200px] space-x-3">
           <img loading="lazy" className="w-12 h-12" src={Logo} alt="logo" />
-          <a className="text-4xl font-bold">Iván.</a>
+          <div className="text-4xl font-bold">Iván.</div>
         </div>
         <div
           onClick={toggleNavBar}
