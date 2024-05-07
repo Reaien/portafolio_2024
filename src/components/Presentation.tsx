@@ -73,6 +73,7 @@ export const Presentation = () => {
           <div className="rounded-t-full xl:ml-20 h-[450px] flex justify-center mx-auto w-[345px] md:w-[350px] bg-gradient-to-b from-orange-600 p-1 ">
             <div className="h-full w-full bg-black rounded-t-full"></div>
             <img
+              loading="lazy"
               className="rounded-t-full absolute top-14 xl:left-32"
               src={foto}
               alt="foto_me"

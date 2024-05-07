@@ -70,6 +70,7 @@ export const CardProjects: React.FC<CardProps> = ({
         </div>
         {Imagenes.map((imagen, index) => (
           <img
+            loading="lazy"
             key={index}
             className={`w-full h-full object-cover absolute transition-opacity duration-500 ${
               index === currentIndex
