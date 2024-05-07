@@ -64,7 +64,7 @@ export const CardProjects: React.FC<CardProps> = ({
               className="flex flex-col mx-auto justify-items-center mt-4 text-white cursor-pointer hover:text-orange-600 transition-all duration-200"
             >
               {EnlaceWebIcon}
-              <p className="text-sm text-white mx-auto ">Enlace</p>
+              Enlace aquí
             </a>
           </div>
         </div>
