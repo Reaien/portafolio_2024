@@ -58,7 +58,7 @@ export const cardProjectsData = [
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     Icon4: <AwsIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
-    Link: "http://balancer-jdelb-776534893.us-east-2.elb.amazonaws.com/",
+    Link: "https://www.jdelb.cl",
   },
   {
     id: 3,
