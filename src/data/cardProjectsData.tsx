@@ -58,7 +58,7 @@ export const cardProjectsData = [
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     Icon4: <AwsIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
-    Link: "https://www.jdelb.cl",
+    Link: "https://jdelb.onrender.com/",
   },
   {
     id: 3,
@@ -73,7 +73,7 @@ export const cardProjectsData = [
     Icon2: <BootstrapIcon className="w-[60px] h-[60px]" />,
     Icon3: <DjangoIcon className="w-[80px] h-[80px]" />,
     EnlaceWebIcon: <WebPageIcon className="mx-auto" />,
-    Link: "http://balancer-marketplace-1084868839.us-east-2.elb.amazonaws.com/",
+    Link: "https://ecommerce-l3vc.onrender.com/",
   },
   {
     id: 4,
