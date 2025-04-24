@@ -4,7 +4,7 @@ export const AboutMe = () => {
       <section className="mt-36">
         <div className="flex justify-center">
           <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text font-bold text-7xl">
-            Sobre mí
+            Carrera
           </p>
         </div>
         <div className="grid xl:grid-cols-2 text-white mt-20">
